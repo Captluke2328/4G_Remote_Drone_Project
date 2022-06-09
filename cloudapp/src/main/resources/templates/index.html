@@ -1,0 +1,21 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+
+<script th:inline="javascript">  
+    const PUBLIC_IP	       = [[${publicIp}]]
+    const VIDEO_ENDPOINT   = [[${videoEndpoint}]]
+    const DEFAULT_SPEED    = [[${defaultSpeed}]]
+    const DEFAULT_ALTITUDE = [[${defaultAltitude}]]
+</script> 
+
+<title>ODAFA - Operate Drones Anywhere From Anywhere</title> 
+
+</head>
+<body>
+    <h1> OOAFA is Online !</h1>  
+</body>
+</html> 
