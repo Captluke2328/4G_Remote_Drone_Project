@@ -34,7 +34,7 @@ public class BaseController {
         final List<DroneInfo> drones = new ArrayList<>();
         
         DroneInfo dto1 = new DroneInfo("1", 1.553504, 110.359291, 0.0468, 7.1, 12.3, "ONLINE");
-        DroneInfo dto2 = new DroneInfo("2", 1.553504, 110.359291, 0.0468, 3, 21, "ONLINE");
+        DroneInfo dto2 = new DroneInfo("2", -6.046810, 107.246430, 0.0468, 3, 21, "ONLINE");
         drones.add(dto1);
         drones.add(dto2);
 
