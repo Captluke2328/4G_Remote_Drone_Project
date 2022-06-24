@@ -10,11 +10,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.google.gson.Gson;
 import com.odafa.cloudapp.configuration.ConfigReader;
-import com.odafa.cloudapp.dto.DroneInfo;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -25,21 +22,6 @@ import lombok.extern.slf4j.Slf4j;
 public class BaseController {
     
     private final ConfigReader configurations;
-
-    @ResponseBody
-    @GetMapping("/updateSystemInfo")
-    public String updateSysteminfo () {
-
-        final Gson gson = new Gson();
-        final List<DroneInfo> drones = new ArrayList<>();
-        
-        DroneInfo dto1 = new DroneInfo("1", 1.553504, 110.359291, 0.0468, 7.1, 12.3, "ONLINE");
-        DroneInfo dto2 = new DroneInfo("2", -6.046810, 107.246430, 0.0468, 3, 21, "ONLINE");
-        drones.add(dto1);
-        drones.add(dto2);
-
-        return gson.toJson(drones);
-    }
 
     @GetMapping("/")
     public String indexPage(Model model){
@@ -78,7 +60,7 @@ public class BaseController {
 		// 	log.error(e.getMessage());
 		// }
         // log.debug(ip);
-        String ip = "10.60.215.193";
+         String ip = "10.60.215.193";
         //String ip = "192.168.8.115";
 
 		return ip;

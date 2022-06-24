@@ -64,9 +64,9 @@ const renderDroneUIComponent = function (droneDTO) {
         '<input class="button" id="mRTL'+droneDTO.id+'" type="button" value="RETURN HOME"  style="width:16%;float:left;margin-left:15px;" />' +
         '<input class="button" id="fActivate'+droneDTO.id+'" type="button" style="width:16%;margin-left:65px;float:left;" value="DROP PACKAGE"/>' +
         '<input class="button" onclick="copyToClipboard(\'copyLink'+droneDTO.id+'\')" type="button" style="width:16%;float:right;" value="SHARE Video Feed"/>' +
-        '<input type="text" size="55" style="position:absolute;top:45px;" id="copyLink'+droneDTO.id+'" value="http://'+PUBLIC_IP+'/v/'+droneDTO.id+'" />' +
+        '<input type="text" size="55" style="position:absolute;top:45px;" id="copyLink'+droneDTO.id+'" value="http://'+ PUBLIC_IP +'/v/'+droneDTO.id+'" />' +
         '</div>' +
-
+         
         '<div id="ctrlPanel6'+droneDTO.id+'" style="position:absolute;top:30px;left:30px;">' +
         '<input class="button" onclick="activateViewMAP(\''+droneDTO.id+'\')" type="button" value="VIEW ON MAP" style="width:148px;background-color:green;opacity:0.55;"/>' +
         '</div>' +
