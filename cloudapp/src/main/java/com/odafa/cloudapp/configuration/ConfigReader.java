@@ -27,5 +27,6 @@ public class ConfigReader {
 	private int defaultSpeed;
 
     @Value("${app.drone.default-altitude}")
-	private int defaultAltitude;    
+	private int defaultAltitude;
+    
 }

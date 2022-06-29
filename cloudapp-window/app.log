@@ -1,4 +1,4 @@
-06-24 17:43 INFO video_streamer_windows - <module>: FPS: 13  Quality: 80  Width 512 Height 352  Grayscale: False
-06-24 17:43 INFO video_streamer_windows - <module>: Drone ID: 1  Video Recipient: 10.60.215.193:1313
-06-24 17:43 INFO video_streamer_windows - main: Socket Opened, Video Streaming started
-06-24 17:43 INFO video_streamer_windows - main: Listening at: ('10.60.215.193', 1313)
+06-29 14:41 INFO video_streamer_windows - <module>: FPS: 13  Quality: 80  Width 512 Height 352  Grayscale: False
+06-29 14:41 INFO video_streamer_windows - <module>: Drone ID: 1  Video Recipient: 10.60.215.193:1313
+06-29 14:41 INFO video_streamer_windows - main: Socket Opened, Video Streaming started
+06-29 14:41 INFO video_streamer_windows - main: Listening at: ('10.60.215.193', 1313)

@@ -21,31 +21,28 @@ import lombok.extern.slf4j.Slf4j;
 @RequiredArgsConstructor
 public class BaseController {
     
-    private final ConfigReader configurations;
+	private final ConfigReader configurations;
 
     @GetMapping("/")
-    public String indexPage(Model model){
-
-        model.addAttribute("publicIP", getPublicIpAddress());
-        model.addAttribute("defaultSpeed", configurations.getDefaultSpeed());
-        model.addAttribute("defaultAltitude", configurations.getDefaultAltitude());
-        model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
-        
-        //log.debug("Index Page Opened");
+    public String indexPage(Model model) {
+		
+		model.addAttribute("publicIp", getPublicIpAddress());
+		model.addAttribute("defaultSpeed", configurations.getDefaultSpeed());
+		model.addAttribute("defaultAltitude", configurations.getDefaultAltitude());
+		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
         
         return "index";
     }
-
+    
     @GetMapping("/v/{droneId}")
-    public String getVideoFeed(Model model, @PathVariable("droneId") String droneId){
-
-        model.addAttribute("publicIp", getPublicIpAddress());
-        model.addAttribute("droneId", droneId);
-        model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
-
+	public String getVideoFeed(Model model, @PathVariable("droneId") String droneId) {
+		
+		model.addAttribute("publicIp", getPublicIpAddress());
+		model.addAttribute("droneId", droneId);
+		model.addAttribute("videoEndpoint", configurations.getVideoWsEndpoint());
+        
         return "video";
     }
-
     
 	private String getPublicIpAddress() {
 		// String ip = "";
