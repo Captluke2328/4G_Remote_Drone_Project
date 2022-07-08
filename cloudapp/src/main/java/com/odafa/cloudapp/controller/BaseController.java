@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.odafa.cloudapp.configuration.ConfigReader;
 
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
-@Slf4j
 @Controller
 @RequiredArgsConstructor
 public class BaseController {
